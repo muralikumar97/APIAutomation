@@ -37,7 +37,7 @@ public class getUser extends BaseTest {
           .then().log().all()
           .assertThat().statusCode(200)
           .and().body("id", equalTo(8291348))
-          .and().body("name", equalTo("Aparna"));
+          .and().body("name", equalTo("Vibha"));
     }
 
     @Test(priority = 1)

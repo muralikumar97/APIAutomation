@@ -41,7 +41,7 @@ public class createUser extends BaseTest {
         
         rc.getRequest(REST_ENDPOINT + createdUserId, true, true)
                 .then().log().all()
-                .assertThat().statusCode(200)
+                .assertThat().statusCode(201)
                 .and()
                 .body("id", equalTo(createdUserId));
     }
