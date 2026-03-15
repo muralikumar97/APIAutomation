@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="API Regression Test Suite" thread-count="1" verbose="4">
+
+	<test name="Go Rest Get API Test">
+		<parameter name="baseURI" value="https://gorest.co.in" />
+
+		<classes>
+			<class name="com.qa.Amadeus.Test.getUser" />
+
+		</classes>
+	</test>
+
+	<test name="Go Rest Create API Test">
+		<parameter name="baseURI" value="https://gorest.co.in" />
+
+		<classes>
+			<class name="com.qa.Amadeus.Test.createUser" />
+
+		</classes>
+	</test>
+
+
+	<test name="Fake Store API Test">
+		<parameter name="baseURI" value="https://fakestoreapi.com" />
+
+		<classes>
+			<class name="com.qa.Amadeus.Test.GetProdTest" />
+
+		</classes>
+	</test>
+
+	<test name="HTTP Bin Org API Test">
+		<parameter name="baseURI" value="https://httpbin.org" />
+
+		<classes>
+			<class name="com.qa.Amadeus.Test.OrgBinTest" />
+
+		</classes>
+	</test>
+	
+
+</suite>	
